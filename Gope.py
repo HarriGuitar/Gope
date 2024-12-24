@@ -30,7 +30,7 @@ messages = [
 ]
 
 # Creates a 60min loop 
-@tasks.loop(minutes = 1)
+@tasks.loop(minutes = 1440)
 async def send_message():
     # Call channel so we can modify it's value
     global channel
